@@ -12,15 +12,15 @@
 }:
 
 let
-  version = "2.1.1";
+  version = "2.3.0";
   ui_version = "2.1.2";
-  libflux_version = "0.139.0";
+  libflux_version = "0.171.0";
 
   src = fetchFromGitHub {
     owner = "influxdata";
     repo = "influxdb";
     rev = "v${version}";
-    sha256 = "sha256-wf01DhB1ampZuWPkHUEOf3KJK4GjeOAPL3LG2+g4NGY=";
+    sha256 = "sha256-kBrv9LWZq7hlJmjXFl7maqFRttfChXJwD5SjeQmr8Ps=";
   };
 
   ui = fetchurl {
@@ -35,7 +35,7 @@ let
       owner = "influxdata";
       repo = "flux";
       rev = "v${libflux_version}";
-      sha256 = "sha256-cELeWZXGVLFoPYfBoBP8NeLBVFIb5o+lWyto42BLyXY=";
+      sha256 = "sha256-v9MUR+PcxAus91FiHYrMN9MbNOTWewh7MT6/t/QWQcM=";
     };
     sourceRoot = "source/libflux";
     cargoSha256 = "sha256-wFgawxgqZqoPnOXJD3r5t2n7Y2bTAkBbBxeBtFEF7N4=";
